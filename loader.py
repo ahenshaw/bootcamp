@@ -26,6 +26,7 @@ def clean(df):
 def load():
     return clean(load_raw())
 
+
 if __name__ == '__main__':
     data = load_raw()
     print(data.describe())
