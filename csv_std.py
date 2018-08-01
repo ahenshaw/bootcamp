@@ -1,3 +1,6 @@
+''' 
+Read and filter CSV file using standard library
+'''
 #%%
 # standard library
 import csv
