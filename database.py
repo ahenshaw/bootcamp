@@ -1,3 +1,5 @@
+''' Database helper module'''
+
 # standard library
 import sqlite3
 # custom modules
