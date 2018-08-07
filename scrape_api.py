@@ -1,4 +1,6 @@
 '''Use web service to retrieve data'''
+# standard library
+import time
 
 # third-party libraries
 import requests
@@ -18,9 +20,14 @@ for location in locations:
     data = response.json()
     # print(data)
 
-    location = data['results'][0]['geometry']['location']
-    # print(location)
-    
-    print('{0[lat]},{0[lng]}'.format(location))
+    try:
+        location = data['results'][0]['geometry']['location']
+    except IndexError:
+        print(response.content)
+    else:    
+        print('{0[lat]},{0[lng]}'.format(location))
+        
+    print(flush=True)
+    time.sleep(0.5)
 
 

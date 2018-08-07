@@ -7,7 +7,7 @@ import pandas as pd
 # custom libraries
 from impute import impute
 
-fn = 'c:/repos/bootcamp/data/NOTCLEAN1A.csv'
+fn = '/repos/bootcamp/data/NOTCLEAN1A.csv'
 
 def load_raw():
     print('Reading from "{}"'.format(fn))

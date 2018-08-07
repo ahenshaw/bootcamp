@@ -5,7 +5,7 @@ import sqlite3
 # custom modules
 from load_and_clean import load_raw, clean
 
-DB_PATH = 'c:/repos/bootcamp/data/data.db'
+DB_PATH = '/repos/bootcamp/data/data.db'
 
 def init_database():
     ''' Use Pandas dataframe to create the SQL table

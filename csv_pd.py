@@ -6,7 +6,7 @@ Read and analyze CSV file using Pandas
 import pandas as pd
 import matplotlib.pyplot as plt
 
-fn = 'c:/repos/bootcamp/data/CLEAN1A.csv'
+fn = '/repos/bootcamp/data/CLEAN1A.csv'
 
 data = pd.read_csv(fn)
 #%%

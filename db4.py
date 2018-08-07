@@ -8,7 +8,7 @@ import pandas as pd
 # custom modules
 from load_and_clean import load_raw, clean
 
-DB_PATH = 'c:/repos/bootcamp/data/data.db'
+DB_PATH = '/repos/bootcamp/data/data.db'
 
 SQL_AGE = '''
     SELECT AGE as age, COUNT(*) as count 
