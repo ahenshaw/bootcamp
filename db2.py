@@ -6,7 +6,7 @@ import sqlite3
 # custom modules
 from load_and_clean import load_raw, clean
 
-DB_PATH = '/repos/bootcamp/data/data.db'
+DB_PATH = 'data/data.db'
 # mode    = 'fail'
 mode    = 'replace'
 

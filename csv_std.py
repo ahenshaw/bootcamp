@@ -6,7 +6,7 @@ Read and filter CSV file using standard library
 import csv
 from pprint import pprint as pp
 
-fn = '/repos/bootcamp/data/CLEAN1A.csv'
+fn = 'data/CLEAN1A.csv'
 
 #%% quick-and-dirty
 data = list(csv.reader(open(fn, encoding="utf-8-sig")))

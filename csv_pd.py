@@ -6,7 +6,7 @@ Read and analyze CSV file using Pandas
 import pandas as pd
 import matplotlib.pyplot as plt
 
-fn = '/repos/bootcamp/data/CLEAN1A.csv'
+fn = 'data/CLEAN1A.csv'
 
 data = pd.read_csv(fn)
 #%%
@@ -18,7 +18,7 @@ data.AGE.plot(kind='hist')
 plt.show()
 
 #%%
-data.AGE.plot(kind='hist', rwidth=0.9, normed=True)
+data.AGE.plot(kind='hist', rwidth=0.9, density=True)
 plt.show()
 
 

@@ -6,7 +6,7 @@ Read and analyze CSV file using numpy
 import numpy as np
 import matplotlib.pyplot as plt
 
-fn = '/repos/bootcamp/data/CLEAN1A.csv'
+fn = 'data/CLEAN1A.csv'
 
 data = np.loadtxt(fn, delimiter=',', skiprows=1)
 #%%
@@ -21,5 +21,8 @@ plt.hist(age)
 plt.show()
 
 #%%
-plt.hist(age, rwidth=0.9, normed=True)
+plt.hist(age, rwidth=0.9, density=True)
 plt.show()
+
+
+#%%
