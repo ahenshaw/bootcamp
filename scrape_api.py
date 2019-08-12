@@ -1,33 +1,15 @@
 '''Use web service to retrieve data'''
-# standard library
-import time
-
+import webbrowser
 # third-party libraries
 import requests
 
 
-URL = 'https://maps.googleapis.com/maps/api/geocode/json'
+URL = 'https://xkcd.com/info.0.json' # latest xkcd comic
 
-locations = ['Kennesaw State University', 
-             'Washington Monument']
+response = requests.get(URL)
+data = response.json()
 
-for location in locations:
-    print(location)
-    parameters = {'address': location}
-    response = requests.get(URL, params=parameters)
-    print(response.url)
+print(data['img'])
+webbrowser.open(data['img'])
 
-    data = response.json()
-    # print(data)
-
-    try:
-        location = data['results'][0]['geometry']['location']
-    except IndexError:
-        print(response.content)
-    else:    
-        print('{0[lat]},{0[lng]}'.format(location))
-        
-    print(flush=True)
-    time.sleep(0.5)
-
-
+print(data['alt'])
